@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مطعمنا</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- قسم صورة المطعم -->
+    <section class="restaurant-image">
+      <!-- <img src="images.jpg" alt="صورة المطعم" /> -->
+    </section>
+
+    <!-- Header Section -->
+    <header>
+      <h1>مطعمنا</h1>
+      <div class="food-categories">
+        <button class="category-button" onclick="filterFoods('الوجبات السريعة')">الوجبات السريعة</button>
+        <button class="category-button" onclick="filterFoods('السلطات')">السلطات</button>
+        <button class="category-button" onclick="filterFoods('الحلويات')">الحلويات</button>
+        <button class="category-button" onclick="filterFoods('الوجبات الشرقية')">الوجبات الشرقية</button>
+        <button class="category-button" onclick="filterFoods('الوجبات البحرية')">الوجبات البحرية</button>
+        <button class="category-button" onclick="filterFoods('')">الكل</button>
+      </div>
+    </header>
+
+    <!-- Food List Section -->
+    <div class="food-list" id="food-list">
+      <!-- سيتم ملء هذه المنطقة بالأطعمة عبر JavaScript -->
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart-section">
+      <h2>سلة المشتريات</h2>
+      <ul id="cart-list">
+        <!-- سيتم إضافة الأطعمة هنا -->
+      </ul>
+      <p id="total-price">المجموع: 0 ريال</p>
+      <button id="checkout-btn">إتمام الطلب</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>جميع الحقوق محفوظة لمطعمنا</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

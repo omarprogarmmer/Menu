@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* تصميم قسم صورة المطعم */
+.restaurant-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+header {
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.food-categories {
+  margin-top: 20px;
+}
+
+.category-button {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.category-button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.food-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.food-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.food-item:hover {
+  transform: scale(1.05);
+}
+
+.food-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.cart-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+  border: 1px solid #ddd;
+}
+
+.cart-section h2 {
+  text-align: center;
+}
+
+.cart-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-section li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.cart-section li button {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-section li button:hover {
+  background-color: #d32f2f;
+}
+
+#checkout-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+#checkout-btn:hover {
+  background-color: #388e3c;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+}
+
+/* تنسيق الأنواع */
+.types-container {
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+}
+
+.types-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.types-container li {
+  margin: 5px 0;
+  font-size: 14px;
+}
